@@ -29,7 +29,7 @@ pipeline {
         script {
 
 
-            sh "mvn sonar:sonar -Dsonar.login=squ_0efe2be6b6641f905311cea79720decddde199e7"
+            sh "mvn sonar:sonar -Dsonar.login=squ_ac9be73529574e4d7c20fd8a26c9ad92104ba6ec"
         }
     }
 }
