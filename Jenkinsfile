@@ -5,7 +5,7 @@ pipeline {
         stage('Git : Source Code Checkout') {
             steps {
                 echo 'Pulling... '
-               /* git branch: 'gestionContracts',*/
+               git branch: 'main',
                 url: 'https://github.com/elemejri/projet_kaddem_bi6.git'
             }
         }
