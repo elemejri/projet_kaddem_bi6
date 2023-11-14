@@ -23,16 +23,7 @@ pipeline {
                 sh 'mvn compile'
             }
         }
-        stage('MVN SONARQUBE Analysis') {
-    steps {
-        // Étape pour compiler le projet avec Maven
-        script {
 
-
-            sh "mvn sonar:sonar -Dsonar.login=squ_ac9be73529574e4d7c20fd8a26c9ad92104ba6ec"
-        }
-    }
-}
         stage('JUNIT-MOCKITO Tests'){
             steps{
                 echo'laching units test ...'
